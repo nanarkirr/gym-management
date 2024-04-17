@@ -1,0 +1,16 @@
+CREATE TABLE batch (
+  bid int(11) NOT NULL,
+  bname varchar(255) DEFAULT NULL,
+  PRIMARY KEY (bid)
+);
+
+
+
+CREATE TABLE participant (
+  pid int(11) NOT NULL AUTO_INCREMENT,
+  name varchar(255) DEFAULT NULL,
+  phone varchar(20) DEFAULT NULL,
+  email varchar(255) DEFAULT NULL,
+  bid int(11) DEFAULT NULL,
+  PRIMARY KEY (pid)
+);
